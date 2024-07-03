@@ -2,7 +2,7 @@
 
 ## Overview
 
-This component is used to wrap sections of generic HTML content in order to apply a standard set of formatting, including fonts, colors, and sized. It helps to ensure a visual consistency among diverse pieces of content and within different components.
+This component is used to wrap sections of generic HTML content in order to apply a standard set of formatting, including fonts, colors, and sizes. It helps to ensure a visual consistency among diverse pieces of content and within different components.
 
 This component provides styling for the following HTML elements:
 
@@ -13,14 +13,17 @@ This component provides styling for the following HTML elements:
 
 The version 2 equivalent is a combination of the "il-formatted" class, the "il-introduction" component, and "il-lede" component. 
 
-There are no slots in the ilw-content component, and the ilw-content component isn't intended to house other components. 
+There are no slots in the ilw-content component, and the ilw-content component isn't intended to house other components. If a design does contain slots or different types of styles, consider using another component for this design. 
+
+Left/right and top/bottom padding is not handled inside this component unless specified with the padding attribute. 
 
 Attributes include:
 
-  * mode: for determining the mode of the content -- starting with introduction and lede, but others may appear. 
-  * theme: the theme/background of the content
-  * width: whether or not this is contained in the parent, or if it will expand to full width
-  * align: whether or not the text is left-aligned, centered, or right-aligned
+  * mode: for determining the mode of the content -- starting with *introduction* and *lede*, but others may be created
+  * theme: the theme/background of the content. Options are *blue*, *orange*, *gray*, *blue-gradient*, *orange-gradient*
+  * width: whether or not this is contained in the parent, if it will expand to full width (*full*), or if it will expand to full width but keep the text in a margin (*auto*)
+  * align: whether or not the text is left-aligned, centered, or right-aligned (*left*, *center*, *right*)
+  * padding: shorthand for padding around the object
 
 ## Contact Team
 
@@ -83,3 +86,4 @@ You can include buttons using the ilw-buttons class or ilw-button class.
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section#usage_notes
 https://usability.yale.edu/web-accessibility/articles/headings 
 https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/
+https://developer.mozilla.org/en-US/docs/Web/CSS/padding

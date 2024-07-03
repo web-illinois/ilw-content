@@ -1,0 +1,36 @@
+<!doctype html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Content Component</title>
+<link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+<link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+<link rel="stylesheet" href="https://jonker.web.illinois.edu/toolkit-test/ilw-global.css">
+<script type="module" src="/src/ilw-content.js"></script>
+<link rel="stylesheet" href="/src/ilw-content.css">
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const params = new URLSearchParams(window.location.search);
+    document.querySelectorAll("ilw-content").forEach(component => {
+      if (params.has('theme')) {
+        component.setAttribute('theme', params.get('theme'));
+      }
+      if (params.has('width')) {
+        component.setAttribute('width', params.get('width'));
+      }
+      if (params.has('align')) {
+        component.setAttribute('align', params.get('align'));
+      }
+      if (params.has('padding')) {
+        component.setAttribute('padding', params.get('padding'));
+      }
+    });
+  });
+</script>
+
+<body style="margin: 0 auto; padding: 0; max-width: 1200px;">
+    <ilw-content mode="lede">
+      <p>
+        Sodium is an essential micronutrient, but the amount we need is small. Three slices of bread or one teaspoon of table salt will do it, and chances are your daily sodium intake is far greater.
+      </p>
+    </ilw-content>
+</body>

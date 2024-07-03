@@ -1,0 +1,37 @@
+<!doctype html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Content Component</title>
+<link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+<link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+<link rel="stylesheet" href="https://jonker.web.illinois.edu/toolkit-test/ilw-global.css">
+<script type="module" src="/src/ilw-content.js"></script>
+<link rel="stylesheet" href="/src/ilw-content.css">
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const params = new URLSearchParams(window.location.search);
+    document.querySelectorAll("ilw-content").forEach(component => {
+      if (params.has('theme')) {
+        component.setAttribute('theme', params.get('theme'));
+      }
+      if (params.has('width')) {
+        component.setAttribute('width', params.get('width'));
+      }
+      if (params.has('align')) {
+        component.setAttribute('align', params.get('align'));
+      }
+      if (params.has('padding')) {
+        component.setAttribute('padding', params.get('padding'));
+      }
+    });
+  });
+</script>
+
+<body style="margin: 0 auto; padding: 0; max-width: 1200px;">
+    <ilw-content mode="introduction">
+      <p><em>Discover your path, define your future.</em></p>
+      <p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p>
+      <p>Join us in changing your future and the world <a href="#">when you accept your ACES admission</a>.</p>
+    </ilw-content>
+</body>

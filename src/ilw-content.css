@@ -1,0 +1,30 @@
+:root {
+    --ilw-content--main-margin: 0 max(1.875rem, calc(50cqw - 37.5rem)) 0;
+    --ilw-content--narrow-max-width: calc(1000px + 3.75rem);
+    --ilw-content--narrow-padding: 0 1.875rem;
+}
+
+ilw-content[align] ul, ilw-content[align] ol {
+    list-style-position: inside;
+}
+
+ilw-content[mode=introduction] p {
+    font-size: 1.375rem;
+    line-height: 2.20rem;
+}
+
+ilw-content[mode=introduction] em {
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+ilw-content[mode=introduction] .ilw-buttons {
+    justify-content: flex-start;
+}
+
+ilw-content[mode=lede] p {
+    font-style: italic;
+    font-size: 1.375rem;
+    line-height: 2.20rem;
+}
