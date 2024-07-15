@@ -1,10 +1,10 @@
 {
-    "title": "Introduction",
-    "tag": "ilw-content-introduction",
+    "title": "Lede",
+    "tag": "ilw-content-lede",
 	"github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
     "element-name": "ilw-content",
-	"description": "The Content component with the introduction mode enabled. Note that the emphasized piece needs to be in an emphasized tag",
+	"description": "The Content component with the lede mode enabled",
 	"version": "0.9.1",
 	"date": "7/3/2024",
 	"css": "https://dev.toolkit.illinois.edu/ilw-content/0.9.1/ilw-content.css",
@@ -16,12 +16,7 @@
 		{
 			"name": "default",
 			"description": "Default content",
-			"text": "<p><em>Discover your path, define your future.</em></p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
-		},
-		{
-			"name": "noemphasis",
-			"description": "No emphasis",
-			"text": "<p>Discover your path, define your future.</p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
+			"text": "<p>Sodium is an essential micronutrient, but the amount we need is small. Three slices of bread or one teaspoon of table salt will do it, and chances are your daily sodium intake is far greater.</p>"
 		}
 	],
 	"attributes-fixed": [
@@ -29,7 +24,7 @@
 			"name": "mode",
 			"description": "Mode of the component",
 			"depreciated": false,
-			"value": "introduction"
+			"value": "lede"
 		}
 	],
 	"attributes-text": [
