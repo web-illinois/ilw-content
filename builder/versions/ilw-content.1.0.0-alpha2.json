@@ -5,10 +5,10 @@
     "type": "web component",
     "element-name": "ilw-content",
 	"description": "The Content component.",
-	"version": "1.0.0-alpha1",
+	"version": "1.0.0-alpha2",
 	"date": "7/3/2024",
-	"css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.0-alpha1/ilw-content.css",
-	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-alpha1/ilw-content.js",
+	"css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.0-alpha2/ilw-content.css",
+	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-alpha2/ilw-content.js",
 	"production": false,
     "notes": "",
 	"parent-style": "margin: 0 auto; max-width: 1200px;",
@@ -39,8 +39,7 @@
 				"orange",
 				"blue-gradient",
 				"orange-gradient",
-				"gray",
-				"white"
+				"gray"
 			]
 		},
 		{
@@ -50,7 +49,8 @@
 			"values": [
 				"",
 				"full",
-				"auto"
+				"auto",
+				"page"
 			]
 		},
 		{

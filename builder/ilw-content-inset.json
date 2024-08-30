@@ -1,10 +1,10 @@
 {
-    "title": "Content",
-    "tag": "ilw-content",
+    "title": "Content - Inset",
+    "tag": "ilw-content-inset",
     "github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
     "element-name": "ilw-content",
-    "description": "The Content component, used to display formatted content.",
+    "description": "The Content component with the inset mode enabled",
     "toolkit-version": "",
     "production-version": "",
     "development-version": "1.0.0-alpha2"

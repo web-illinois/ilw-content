@@ -19,23 +19,18 @@ Left/right and top/bottom padding is not handled inside this component unless sp
 
 Attributes include:
 
-  * mode: for determining the mode of the content -- starting with *introduction* and *lede*, but others may be created
+  * mode: for determining the mode of the content. See below for options.
   * theme: the theme/background of the content. Options are *blue*, *orange*, *gray*, *blue-gradient*, *orange-gradient*
-  * width: whether or not this is contained in the parent, if it will expand to full width (*full*), or if it will expand to full width but keep the text in a margin (*auto*)
+  * width: whether or not this is contained in the parent, if it will expand to full width (*full*), or if it will expand to full width but keep the text in a margin (*auto*), or if it will restrict it to a page margin (*page*).
   * align: whether or not the text is left-aligned, centered, or right-aligned (*left*, *center*, *right*)
   * padding: shorthand for padding around the object
 
-## Contact Team
+### Modes
 
-jonker@illinois.edu
+  * introduction: an introduction area that is used to start a news story or block of text
+  * lede: a single line within a story
+  * inset: a block of content that has normalized the heading, used to be put into a call to action or image feature. The inset will always have a transparent background, but you can still assign the theme to ensure color contrast. 
 
-## NPM Install
-
-None yet, still in alpha.
-
-## Files
-
-None yet, still in alpha.
 
 ## Code Examples
 
@@ -73,13 +68,22 @@ None yet, still in alpha.
 </ilw-content>
 ```
 
+## Upgrade Process
+
+* Change the "il-content", "il-introduction" and "il-lede" to "ilw-content". 
+* Add the mode if you changed from the old "il-introduction" and "il-lede" components. 
+* Update classes to attributes.
+* If you have a paragraph that you want to look like a heading, you can use `<p class="ilw-heading">`
+
 ## Accessibility Notes and Use
 
 Color contrast. Be aware that if you want to change colors, make sure you have correct color contrast. 
 
 This does not automatically include your content in a ``<section>`` tag. This is because the section tag is a semantic area that usually includes headings, and it's not expected that these content items will have headings. 
 
-You can include buttons using the ilw-buttons class or ilw-button class. 
+You can include buttons using the `ilw-buttons` or `ilw-button` class. 
+
+There is a `<p class="ilw-heading">` helper that will make a paragraph look like a header, but it will not be part of the accessibility tree as a header. 
 
 ## External references
 

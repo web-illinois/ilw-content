@@ -3,7 +3,7 @@ import { css } from 'lit';
 export default css`
 
 .content {
-    background-color: white;
+    background-color: var(--ilw-content--background-color, white);
 }
 
     .content.fixed {
@@ -17,6 +17,11 @@ export default css`
         width:100vw;
     }
 
+    .content.page {
+        margin: var(--ilw-content--main-margin, 0);
+    }
+
+
     .content.blue, .content.orange, .content.blue-gradient, .content.orange-gradient {
         --ilw-text--color: white;
         --ilw-heading--color: white;
@@ -27,28 +32,33 @@ export default css`
     }
 
     .content.blue {
-        background-color: var(--il-blue);
+        --ilw-content--background-color: var(--il-blue);
         --ilw-link--focused-color: var(--il-orange);
     }
 
     .content.orange {
-        background-color: var(--il-orange);
+        --ilw-content--background-color: var(--il-orange);
         --ilw-link--focused-color: var(--il-blue);
     }
 
     .content.blue-gradient {
-        background: var(--il-gradient-blue), var(--il-blue-darker-1);
+        --ilw-content--background-color: var(--il-gradient-blue), var(--il-blue-darker-1);
         --ilw-link--focused-color: var(--il-orange);
     }
 
     .content.orange-gradient {
-        background: var(--il-gradient-orange), var(--il-altgeld);
+        --ilw-content--background-color: var(--il-gradient-orange), var(--il-altgeld);
         --ilw-link--focused-color: var(--il-blue);
     }
     
     .content.gray {
-        background-color: var(--il-storm-lighter-4);
+        --ilw-content--background-color: var(--il-storm-lighter-4);
     }
+
+    .content.inset {
+        --ilw-content--background-color: transparent;
+    }
+
 
 .content-inner.fixed {
     margin: var(--ilw-content--main-margin, 0);
@@ -71,4 +81,7 @@ export default css`
     padding: var(--ilw-content--narrow-padding);
 }
 
+.content.inset .content-padding {
+    padding: var(--ilw-content--inset-padding);
+}
 `;

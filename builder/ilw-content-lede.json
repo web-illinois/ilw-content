@@ -1,5 +1,5 @@
 {
-    "title": "Lede",
+    "title": "Content - Lede",
     "tag": "ilw-content-lede",
     "github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
@@ -7,5 +7,5 @@
     "description": "The Content component with the lede mode enabled",
     "toolkit-version": "",
     "production-version": "",
-    "development-version": "1.0.0-alpha1"
+    "development-version": "1.0.0-alpha2"
 }

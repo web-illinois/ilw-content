@@ -1,5 +1,5 @@
 {
-    "title": "Introduction",
+    "title": "Content - Introduction",
     "tag": "ilw-content-introduction",
     "github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
@@ -7,5 +7,5 @@
     "description": "The Content component with the introduction mode enabled",
     "toolkit-version": "",
     "production-version": "",
-    "development-version": "1.0.0-alpha1"
+    "development-version": "1.0.0-alpha2"
 }

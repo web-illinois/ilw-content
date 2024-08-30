@@ -1,7 +1,9 @@
 :root {
-    --ilw-content--main-margin: 0 max(1.875rem, calc(50cqw - 37.5rem)) 0;
+    --ilw-content--main-margin: 0 var(--ilw-margin--side, max(1.875rem, calc(50cqw - 37.5rem))) 0;
     --ilw-content--narrow-max-width: calc(1000px + 3.75rem);
     --ilw-content--narrow-padding: 0 1.875rem;
+    --ilw-content--inset-padding: 3rem 6rem;
+    --ilw-content--background-color: white;
 }
 
 ilw-content p, ilw-content caption, ilw-content blockquote, ilw-content dd, ilw-content dt {
@@ -48,7 +50,9 @@ ilw-content a:focus {
   background-color: var(--ilw-link--focused-background-color); 
 }
 
-ilw-content h1, ilw-content h2, ilw-content h3, ilw-content h4, ilw-content h5, ilw-content h6 {
+ilw-content h1, ilw-content h2, ilw-content h3, 
+ilw-content h4, ilw-content h5, 
+ilw-content h6, ilw-content p.ilw-heading {
   display: block;
   color: inherit;
   line-height: 1.2;
@@ -82,7 +86,7 @@ ilw-content h3 {
   margin-bottom: 1.3125rem;
 }
 
-ilw-content h4, ilw-content h5, ilw-content h6 {
+ilw-content h4, ilw-content h5, ilw-content h6, ilw-content p.ilw-heading {
   font-size: 1.2rem;
   line-height: 1.667rem;
   margin-top: 1.3125rem;
@@ -122,4 +126,27 @@ ilw-content[mode=lede] p {
     font-style: italic;
     font-size: 1.375rem;
     line-height: 2.20rem;
+}
+
+ilw-content[mode=inset] h2, ilw-content[mode=inset] h3, 
+ilw-content[mode=inset] h4, ilw-content[mode=inset] h5, 
+ilw-content[mode=inset] h6, ilw-content[mode=inset] p.ilw-heading {
+  font-size: 1.813rem;
+  line-height: 2.175rem;
+}
+
+@media (max-width: 1450px) {
+  ilw-content {
+    --ilw-content--inset-padding: 3rem 2.2vw;
+  }
+}
+@media (max-width: 1000px) {
+  ilw-content {
+    --ilw-content--inset-padding: 1.875rem;
+  }
+}
+@media (max-width: 800px) {
+  ilw-content {
+    --ilw-content--inset-padding: 1.875rem 1.25rem;
+  }
 }
