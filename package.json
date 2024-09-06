@@ -3,7 +3,7 @@
   "description": "Illinois Toolkit: Basic content item.",
   "repository": "github:web-illinois/ilw-content",
   "private": false,
-  "version": "1.0.0-alpha2",
+  "version": "1.0.0-alpha3",
   "type": "module",
   "files": [
     "src/**",
