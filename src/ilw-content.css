@@ -41,13 +41,14 @@ ilw-content a:visited {
   color: var(--ilw-link--visited-color);
 }
 
-ilw-content a:hover, ilw-content a:focus {
+ilw-content a:hover {
   color: var(--ilw-link--focused-color);
 }
 
 ilw-content a:focus {
-  outline: var(--ilw-link--focused-outline); 
-  background-color: var(--ilw-link--focused-background-color); 
+  background-color: var(--ilw-link--focus-background-color);
+  color: var(--ilw-link--focus-color);
+  outline: var(--ilw-link--focus-outline);
 }
 
 ilw-content h1, ilw-content h2, ilw-content h3, 

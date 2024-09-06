@@ -1,14 +1,14 @@
 {
-    "title": "Content - Inset",
-    "tag": "ilw-content-inset",
+    "title": "Content - Lede",
+    "tag": "ilw-content-lede",
 	"github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
     "element-name": "ilw-content",
-	"description": "The Content component with the inset mode enabled",
-	"version": "1.0.0-alpha2",
+	"description": "The Content component with the lede mode enabled",
+	"version": "1.0.0-alpha3",
 	"date": "7/3/2024",
-	"css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.0-alpha2/ilw-content.css",
-	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-alpha2/ilw-content.js",
+	"css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.0-alpha3/ilw-content.css",
+	"js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.0-alpha3/ilw-content.js",
     "production": false,
     "notes": "",
 	"parent-style": "margin: 0 auto; max-width: 1200px;",
@@ -16,7 +16,7 @@
 		{
 			"name": "default",
 			"description": "Default content",
-			"text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your journey toward a brighter future begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
+			"text": "<p>Sodium is an essential micronutrient, but the amount we need is small. Three slices of bread or one teaspoon of table salt will do it, and chances are your daily sodium intake is far greater.</p>"
 		}
 	],
 	"attributes-fixed": [
@@ -24,7 +24,7 @@
 			"name": "mode",
 			"description": "Mode of the component",
 			"depreciated": false,
-			"value": "inset"
+			"value": "lede"
 		}
 	],
 	"attributes-text": [
