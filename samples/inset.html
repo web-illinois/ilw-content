@@ -14,6 +14,9 @@
       if (params.has('theme')) {
         component.setAttribute('theme', params.get('theme'));
       }
+      if (params.has('transparent')) {
+        component.setAttribute('transparent', true);
+      }
       if (params.has('width')) {
         component.setAttribute('width', params.get('width'));
       }
@@ -35,6 +38,16 @@
       <h3>Lorem ipsum dolor sit amet</h3><p>Nunc sed leo arcu. Nulla non eleifend sapien. </p>
     </ilw-content>
     <ilw-content mode="inset">
-      <h4>Lorem ipsum dolor sit amet</h4><p>Nunc sed leo arcu. Nulla non eleifend sapien. </p>
+      <h3>Student Life</h3>
+      <p>
+        Animal sciences students extend their learning and career networks beyond
+        the classroom through internships, <a href="#">judging teams</a>, student
+        organizations, undergraduate research projects with our faculty, as well
+        as short- and long-term study abroad opportunities all over the world.
+      </p>
+      <ul class="ilw-buttons">
+        <li><a href="#">Subscribe</a></li>
+        <li><a href="#">Find a departmental advisor</a></li>
+      </ul>
     </ilw-content>
 </body>

@@ -55,7 +55,7 @@ export default css`
         --ilw-content--background-color: var(--il-storm-lighter-4);
     }
 
-    .content.inset {
+    .content.transparent {
         --ilw-content--background-color: transparent;
     }
 
