@@ -9,7 +9,7 @@
     "version": "1.0.1-beta",
     "date": "10/08/2024",
     "css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.1-beta/ilw-content.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-hero/1.0.1-beta/ilw-content.js",
+    "js": "https://dev.toolkit.illinois.edu/ilw-content/1.0.1-beta/ilw-content.js",
     "production": false,
     "notes": "",
     "parent-style": "margin: 0 auto; max-width: 1200px;",
