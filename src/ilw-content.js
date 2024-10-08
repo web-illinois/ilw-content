@@ -8,6 +8,7 @@ class Content extends LitElement {
   static get properties() {
     return {
       theme: { type: String, attribute: true },
+      transparent: { type: Boolean, attribute: true },
       mode: { type: String, attribute: true },
       align: { type: String, attribute: true },
       width: { type: String, attribute: true },
@@ -42,7 +43,7 @@ class Content extends LitElement {
 
   render() {
       return html`
-      <div class="content ${this.mode} ${this.theme} ${this.outerWidth}">
+      <div class="content ${this.mode} ${this.theme} ${this.outerWidth} ${this.transparent ? 'transparent' : ''}">
       <div style="${this.paddingStyle}" class="content-inner ${this.innerWidth} ${this.align}">
       <div class="content-padding">
           <slot></slot>
