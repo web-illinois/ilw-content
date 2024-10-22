@@ -1,0 +1,98 @@
+{
+    "title": "Content - Inset",
+    "tag": "ilw-content-inset",
+    "github": "https://github.com/web-illinois/ilw-content/",
+    "type": "web component",
+    "element-name": "ilw-content",
+    "description": "The Content component with the inset mode enabled",
+    "builder-version": "1.0",
+    "version": "1.0.0",
+    "date": "10/22/2024",
+    "css": "https://cdn.toolkit.illinois.edu/ilw-content/1.0.0/ilw-content.css",
+    "js": "https://cdn.toolkit.illinois.edu/ilw-content/1.0.0/ilw-content.js",
+    "production": true,
+    "notes": "",
+    "parent-style": "margin: 0 auto; max-width: 1200px;",
+    "samples": [
+        {
+            "name": "default",
+            "description": "Default content",
+            "text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your journey toward a brighter future begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
+        }
+    ],
+    "attributes-fixed": [
+        {
+            "name": "mode",
+            "description": "Mode of the component",
+            "depreciated": false,
+            "value": "inset"
+        }
+    ],
+    "attributes-text": [
+        {
+            "name": "padding",
+            "description": "Padding of the text inside the component",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [
+        {
+            "name": "theme",
+            "description": "Color theme used",
+            "depreciated": false,
+            "values": [
+                "",
+                "blue",
+                "orange",
+                "blue-gradient",
+                "orange-gradient",
+                "gray"
+            ]
+        },
+        {
+            "name": "width",
+            "description": "Width of component",
+            "depreciated": false,
+            "values": [
+                "",
+                "full",
+                "auto",
+                "page"
+            ]
+        },
+        {
+            "name": "align",
+            "description": "Alignment of the text inside the component, defaults to left",
+            "depreciated": false,
+            "values": [
+                "",
+                "center",
+                "right"
+            ]
+        },
+        {
+            "name": "transparent",
+            "description": "Whether the background is transparent -- note it will use the styling of whatever theme it is set to.",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
+        }
+    ],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+        {
+            "name": "--ilw-content--narrow-max-width",
+            "depreciated": false,
+            "description": "Size of the max width of the element in CSS length"
+        },
+        {
+            "name": "--ilw-content--narrow-padding",
+            "depreciated": false,
+            "description": "Size of the padding of the element in CSS length"
+        }
+    ]
+}

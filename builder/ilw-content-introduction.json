@@ -6,7 +6,7 @@
     "element-name": "ilw-content",
     "description": "The Content component with the introduction mode enabled",
     "purpose": "Introduce your content with stylized text.",
-    "toolkit-version": "",
-    "production-version": "",
+    "toolkit-version": "1.0",
+    "production-version": "1.0",
     "development-version": "1.0-beta"
 }

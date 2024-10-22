@@ -6,7 +6,7 @@
     "element-name": "ilw-content",
     "description": "The Content component with the inset mode enabled",
     "purpose": "Display styled content inside other components.",
-    "toolkit-version": "",
-    "production-version": "",
+    "toolkit-version": "1.0",
+    "production-version": "1.0",
     "development-version": "1.0-beta"
 }

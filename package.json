@@ -3,7 +3,8 @@
   "description": "Illinois Toolkit: Basic content item.",
   "repository": "github:web-illinois/ilw-content",
   "private": false,
-  "version": "1.0.1-beta",
+  "license": "MIT",
+  "version": "1.0.0",
   "type": "module",
   "files": [
     "src/**",
