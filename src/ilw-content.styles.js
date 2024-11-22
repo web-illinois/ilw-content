@@ -39,6 +39,10 @@ export default css`
     .content.orange {
         --ilw-content--background-color: var(--il-orange);
         --ilw-link--focused-color: var(--il-blue);
+        --ilw-text--color: var(--il-blue);
+        --ilw-heading--color: var(--il-blue);
+        --ilw-link--color: var(--il-blue);
+        --ilw-link--visited-color: var(--il-blue);
     }
 
     .content.blue-gradient {
