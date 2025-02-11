@@ -12,6 +12,7 @@ class Content extends LitElement {
       mode: { type: String, attribute: true },
       align: { type: String, attribute: true },
       width: { type: String, attribute: true },
+      decoration: { type: Boolean, attribute: true },
       padding: { type: String, attribute: true }
     };
   }
@@ -27,6 +28,7 @@ class Content extends LitElement {
     this.align = '';
     this.width = '';
     this.padding = '';
+    this.decoration = false;
   }
 
   get paddingStyle() {
@@ -45,8 +47,9 @@ class Content extends LitElement {
       return html`
       <div class="content ${this.mode} ${this.theme} ${this.outerWidth} ${this.transparent ? 'transparent' : ''}">
       <div style="${this.paddingStyle}" class="content-inner ${this.innerWidth} ${this.align}">
-      <div class="content-padding">
+      <div class="content-padding ${this.decoration ? 'decoration' : ''}">
           <slot></slot>
+          <div class="bottom-line" role="presentation"></div>
       </div>
       </div>
       </div>

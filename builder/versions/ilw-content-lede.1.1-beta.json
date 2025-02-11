@@ -70,6 +70,15 @@
                 "center",
                 "right"
             ]
+        },
+        {
+            "name": "decoration",
+            "description": "If an orange line is displayed",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
+            ]
         }
     ],
     "classes-fixed": [],
