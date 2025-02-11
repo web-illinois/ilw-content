@@ -1,28 +1,23 @@
 {
-    "title": "Content - Introduction",
-    "tag": "ilw-content-introduction",
+    "title": "Content - Inset",
+    "tag": "ilw-content-inset",
     "github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
     "element-name": "ilw-content",
-    "description": "The Content component with the introduction mode enabled. Note that the emphasized piece needs to be in an emphasized tag",
-    "builder-version": "1.0-beta",
-    "version": "1.0.1-beta",
-    "date": "10/08/2024",
-    "css": "https://dev.toolkit.illinois.edu/ilw-content/1.0.1-beta/ilw-content.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-content/1.0.1-beta/ilw-content.js",
+    "description": "The Content component with the inset mode enabled",
+    "builder-version": "1.1-beta",
+    "version": "1.1.0-beta",
+    "date": "2/11/2025",
+    "css": "https://dev.toolkit.illinois.edu/ilw-content/1.1.0-beta/ilw-content.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-content/1.1.0-beta/ilw-content.js",
     "production": false,
     "notes": "",
     "parent-style": "margin: 0 auto; max-width: 1200px;",
     "samples": [
-         {
-             "name": "default",
-             "description": "Default content",
-             "text": "<p><em>Discover your path, define your future.</em></p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
-         },
-         {
-            "name": "noemphasis",
-            "description": "No emphasis",
-            "text": "<p>Discover your path, define your future.</p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
+        {
+            "name": "default",
+            "description": "Default content",
+            "text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your journey toward a brighter future begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
         }
     ],
     "attributes-fixed": [
@@ -30,7 +25,7 @@
             "name": "mode",
             "description": "Mode of the component",
             "depreciated": false,
-            "value": "introduction"
+            "value": "inset"
         }
     ],
     "attributes-text": [
@@ -74,6 +69,15 @@
                 "",
                 "center",
                 "right"
+            ]
+        },
+        {
+            "name": "transparent",
+            "description": "Whether the background is transparent -- note it will use the styling of whatever theme it is set to.",
+            "depreciated": false,
+            "values": [
+                "",
+                "true"
             ]
         }
     ],
