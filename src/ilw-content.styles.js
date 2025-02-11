@@ -88,4 +88,31 @@ export default css`
 .content.inset .content-padding {
     padding: var(--ilw-content--inset-padding);
 }
+
+.content.lede .content-padding.decoration {
+    border-left: 6px solid var(--il-orange);
+    border-right: none;
+    border-bottom: none;
+}
+
+.content.lede .content-inner.right .content-padding.decoration {
+    border-left: none;
+    border-right: 6px solid var(--il-orange);
+    border-bottom: none;
+}
+
+.content.lede .content-inner.center .content-padding.decoration {
+    border-left: none;
+    border-right: none;
+}
+
+.content.lede .content-inner.center .content-padding.decoration .bottom-line {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 10px;
+    border-bottom: 6px solid var(--il-orange);
+}
+
+.bottom-line { display: none; }
 `;
