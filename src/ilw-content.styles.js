@@ -22,7 +22,7 @@ export default css`
     }
 
 
-    .content.blue, .content.orange, .content.blue-gradient, .content.orange-gradient {
+    .content.blue, .content.orange, .content.blue-gradient {
         --ilw-text--color: white;
         --ilw-heading--color: white;
         --ilw-link--color: white;
@@ -36,7 +36,7 @@ export default css`
         --ilw-link--focused-color: var(--il-orange);
     }
 
-    .content.orange {
+    .content.orange, content.orange-gradient {
         --ilw-content--background-color: var(--il-orange);
         --ilw-link--focused-color: var(--il-blue);
         --ilw-text--color: var(--il-blue);
@@ -46,12 +46,12 @@ export default css`
     }
 
     .content.blue-gradient {
-        --ilw-content--background-color: var(--il-gradient-blue), var(--il-blue-darker-1);
+        background: var(--ilw-content--blue-gradient);
         --ilw-link--focused-color: var(--il-orange);
     }
 
     .content.orange-gradient {
-        --ilw-content--background-color: var(--il-gradient-orange), var(--il-altgeld);
+        background: var(--ilw-content--orange-gradient);
         --ilw-link--focused-color: var(--il-blue);
     }
     

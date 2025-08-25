@@ -4,6 +4,8 @@
     --ilw-content--narrow-padding: 0 1.875rem;
     --ilw-content--inset-padding: 3rem 6rem;
     --ilw-content--background-color: white;
+    --ilw-content--blue-gradient: linear-gradient(160deg, var(--il-industrial) 20%, var(--il-blue) 100%);
+    --ilw-content--orange-gradient: linear-gradient(135.14deg, var(--il-harvest) 0%, #fd890e 30.44%, var(--il-orange) 100.75%);
 }
 
 ilw-content p, ilw-content caption, ilw-content blockquote, ilw-content dd, ilw-content dt {
