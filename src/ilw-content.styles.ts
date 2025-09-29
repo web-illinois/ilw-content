@@ -3,7 +3,7 @@ import { css } from 'lit';
 export default css`
 
 .content {
-    background-color: var(--ilw-color--background, white);
+    background: var(--ilw-color--background, white);
 }
 
     .content.fixed {
