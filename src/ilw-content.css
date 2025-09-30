@@ -48,7 +48,7 @@ ilw-content a:hover {
 ilw-content a:focus {
   background-color: var(--ilw-color--focus--background);
   color: var(--ilw-color--focus--text);
-  outline: var(--ilw-color--focus--outline);
+  outline-color: var(--ilw-color--focus--outline);
 }
 
 ilw-content h1, ilw-content h2, ilw-content h3, 
@@ -149,13 +149,13 @@ ilw-content[mode=inset] h6, ilw-content[mode=inset] p.ilw-heading {
   line-height: 2.175rem;
 }
 
-ilw-content[mode=inset] ul.ilw-buttons a:not([class]), ilw-content ul.ilw-buttons[mode=inset] button:not([class]) {
+ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]), ilw-content ul.ilw-buttons[mode=inset] button:not([class^="ilw-theme-"]) {
     background: var(--ilw-color--control);
     color: var(--ilw-color--control-text);
     border-color: var(--ilw-color--control-text);
 }
 
-ilw-content[mode=inset] ul.ilw-buttons a:not([class]):hover, ilw-content[mode=inset] ul.ilw-buttons button:not([class]):hover {
+ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]):hover, ilw-content[mode=inset] ul.ilw-buttons button:not([class^="ilw-theme-"]):hover {
     background: var(--ilw-color--control-text);
     color: var(--ilw-color--control);
     border-color: var(--ilw-color--control-text);

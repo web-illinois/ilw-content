@@ -22,7 +22,7 @@ export default css`
     }
 
     .content.transparent {
-        --ilw-color--white--background: transparent;
+        --ilw-color--background: transparent;
     }
 
 .content-inner.fixed {

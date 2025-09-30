@@ -10,15 +10,7 @@ export default defineConfig({
             entry: "ilw-content.ts",
             fileName: "ilw-content",
             formats: ["es"],
-        },
-        rollupOptions: {
-            output: {
-                assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "ilw-content.css";
-                    return "[name][extname]";
-                },
-            },
-        },
+        }
     },
     server: {
         hmr: false,
