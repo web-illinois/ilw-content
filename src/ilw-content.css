@@ -149,7 +149,7 @@ ilw-content[mode=inset] h6, ilw-content[mode=inset] p.ilw-heading {
   line-height: 2.175rem;
 }
 
-ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]), ilw-content ul.ilw-buttons[mode=inset] button:not([class^="ilw-theme-"]) {
+ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]), ilw-content[mode=inset] ul.ilw-buttons button:not([class^="ilw-theme-"]) {
     background: var(--ilw-color--control);
     color: var(--ilw-color--control-text);
     border-color: var(--ilw-color--control-text);
@@ -159,6 +159,18 @@ ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]):hover, ilw-c
     background: var(--ilw-color--control-text);
     color: var(--ilw-color--control);
     border-color: var(--ilw-color--control-text);
+}
+
+ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]):focus, ilw-content[mode=inset] ul.ilw-buttons button:not([class^="ilw-theme-"]):focus {
+    background: var(--ilw-color--focus--background);
+    color: var(--ilw-color--focus--text);
+    border-color: var(--ilw-color--focus--outline);
+}
+
+ilw-content[mode=inset] ul.ilw-buttons a:not([class^="ilw-theme-"]):active, ilw-content[mode=inset] ul.ilw-buttons button:not([class^="ilw-theme-"]):active {
+    background: var(--ilw-color--control-accent);
+    color: var(--ilw-color--control-accent-text);
+    border-color: var(--ilw-color--control-accent);
 }
 
 @media (max-width: 1450px) {
