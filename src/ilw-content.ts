@@ -1,29 +1,40 @@
 
-import { LitElement, html } from 'lit';
+import { LitElement, html, unsafeCSS } from 'lit';
 import styles from './ilw-content.styles';
 import './ilw-content.css';
 
-class Content extends LitElement {
+ import { customElement, property, query, state } from "lit/decorators.js";
+@customElement('ilw-content')
+export default class Content extends LitElement {
 
-  static get properties() {
-    return {
-      theme: { type: String, attribute: true },
-      transparent: { type: Boolean, attribute: true },
-      mode: { type: String, attribute: true },
-      align: { type: String, attribute: true },
-      width: { type: String, attribute: true },
-      decoration: { type: Boolean, attribute: true },
-      padding: { type: String, attribute: true }
-    };
-  }
+    static get styles() {
+        return unsafeCSS(styles);
+    }
 
-  static get styles() {
-    return styles;
-  }
+    @property({type: String})
+    theme: "white" | "gray" | "orange" | "blue" | "orange-gradient" | "blue-gradient" = "white";
+    
+    @property({type: Boolean})
+    transparent: boolean = false;
+
+    @property({type: String}) 
+    mode: string = ""
+
+    @property({type: String}) 
+    align: string = "";
+
+    @property({type: String}) 
+    width: string = "";
+
+    @property({type: Boolean}) 
+    decoration: boolean = false;
+
+    @property({type: String}) 
+    padding: string = "";
 
   constructor() {
     super();
-    this.theme = '';
+    this.theme = 'white';
     this.mode = '';
     this.align = '';
     this.width = '';
@@ -57,4 +68,8 @@ class Content extends LitElement {
   }
 }
 
-customElements.define('ilw-content', Content);
+declare global {
+interface HTMLElementTagNameMap {
+    "ilw-content": Content;
+  }
+}
