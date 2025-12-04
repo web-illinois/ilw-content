@@ -6,7 +6,8 @@
     "element-name": "ilw-content",
     "description": "The Content component, used to display formatted content.",
     "purpose": "Display content with standard styles.",
-    "toolkit-version": "1.1",
+    "toolkit-version": "1.2",
     "production-version": "1.2",
-    "development-version": "1.1-beta"
+    "development-version": "latest"
+
 }

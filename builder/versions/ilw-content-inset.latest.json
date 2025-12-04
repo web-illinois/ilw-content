@@ -1,15 +1,15 @@
 {
-    "title": "Content - Lede",
-    "tag": "ilw-content-lede",
+    "title": "Content - Inset",
+    "tag": "ilw-content-inset",
     "github": "https://github.com/web-illinois/ilw-content/",
     "type": "web component",
     "element-name": "ilw-content",
-    "description": "The Content component with the lede mode enabled",
-    "builder-version": "1.1-beta",
+    "description": "The Content component with the inset mode enabled",
+    "builder-version": "latest",
     "version": "1.1.0-beta",
     "date": "2/11/2025",
-    "css": "https://dev.toolkit.illinois.edu/ilw-content/1.1.0-beta/ilw-content.css",
-    "js": "https://dev.toolkit.illinois.edu/ilw-content/1.1.0-beta/ilw-content.js",
+    "css": "https://dev.toolkit.illinois.edu/ilw-content/latest/ilw-content.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-content/latest/ilw-content.js",
     "production": false,
     "notes": "",
     "parent-style": "margin: 0 auto; max-width: 1200px;",
@@ -17,7 +17,7 @@
         {
             "name": "default",
             "description": "Default content",
-            "text": "<p>Sodium is an essential micronutrient, but the amount we need is small. Three slices of bread or one teaspoon of table salt will do it, and chances are your daily sodium intake is far greater.</p>"
+            "text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your journey toward a brighter future begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
         }
     ],
     "attributes-fixed": [
@@ -25,7 +25,7 @@
             "name": "mode",
             "description": "Mode of the component",
             "depreciated": false,
-            "value": "lede"
+            "value": "inset"
         }
     ],
     "attributes-text": [
@@ -72,8 +72,8 @@
             ]
         },
         {
-            "name": "decoration",
-            "description": "If an orange line is displayed",
+            "name": "transparent",
+            "description": "Whether the background is transparent -- note it will use the styling of whatever theme it is set to.",
             "depreciated": false,
             "values": [
                 "",
