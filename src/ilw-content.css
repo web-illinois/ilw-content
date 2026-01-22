@@ -5,11 +5,13 @@
     --ilw-content--inset-padding: 3rem 6rem;
     --ilw-content--background-color: white;
 }
+ilw-content {
+  color: var(--ilw-color--text);
+  font: 400 1.125rem/1.667rem var(--il-font-sans);
+}
 
 ilw-content p, ilw-content caption, ilw-content blockquote, ilw-content dd, ilw-content dt {
     display: block;
-    font: 400 1.125rem/1.667rem var(--il-font-sans);
-    color: var(--ilw-color--text);
     margin-top: 1.2rem;
     margin-bottom: 0;
   }
@@ -107,7 +109,7 @@ ilw-content h4, ilw-content h5, ilw-content h6, ilw-content p.ilw-heading {
   margin-bottom: 0rem;
 }
 
-ilw-content ul, ilw-content ol {
+ilw-content > ul, ilw-content > ol {
   margin-top: 1.2rem;
   margin-bottom: 0;
 }
@@ -121,7 +123,7 @@ ilw-content[align] ul, ilw-content[align] ol {
     list-style-position: inside;
 }
 
-ilw-content[mode=introduction] p {
+ilw-content[mode=introduction] p, ilw-content[mode=introduction] div {
     font-size: 1.375rem;
     line-height: 2.20rem;
 }
@@ -136,7 +138,7 @@ ilw-content[mode=introduction] .ilw-buttons {
     justify-content: flex-start;
 }
 
-ilw-content[mode=lede] p {
+ilw-content[mode=lede] p, ilw-content[mode=lede] div {
     font-style: italic;
     font-size: 1.375rem;
     line-height: 2.20rem;
