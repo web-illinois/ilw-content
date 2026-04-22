@@ -15,6 +15,7 @@ export default css`
         position:relative;
         right:50%;
         width:100vw;
+        max-width: 100%;
     }
 
     .content.page {
