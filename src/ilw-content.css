@@ -10,11 +10,16 @@ ilw-content {
   font: 400 1.125rem/1.667rem var(--il-font-sans);
 }
 
-ilw-content p, ilw-content caption, ilw-content blockquote, ilw-content dd, ilw-content dt {
+ilw-content p, ilw-content blockquote, ilw-content dd, ilw-content dt {
     display: block;
     margin-top: 1.2rem;
     margin-bottom: 0;
   }
+
+ilw-content caption {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
 
 ilw-content td, ilw-content th {
   font: 400 1.125rem/1.667rem var(--il-font-sans);
