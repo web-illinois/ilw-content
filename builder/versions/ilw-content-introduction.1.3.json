@@ -17,7 +17,7 @@
          {
              "name": "default",
              "description": "Default content",
-             "text": "<p><em>Discover your path, define your future.</em></p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to all of the incredible opportunities that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
+             "text": "<p><em>Discover your path, define your future.</em></p><p>No matter what path brought you to ACES, we're glad you're here. A strong education is just a stepping stone to <a href=\"#\" target=\"_blank\">all of the incredible opportunities</a> that await you.</p><p>Join us in changing your future and the world <a href=\"#\">when you accept your ACES admission</a>.</p>"
          },
          {
             "name": "noemphasis",

@@ -17,7 +17,7 @@
         {
             "name": "default",
             "description": "Default content",
-            "text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your journey toward a brighter future begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
+            "text": "<h2>Join Us at Whispering Pines College</h2><p>Discover a place where academic excellence meets natural beauty. At Whispering Pines College, your <a href=\"#\" target=\"_blank\">journey toward a brighter future</a> begins in the heart of the forest. Embrace the spirit of exploration, innovation, and community that defines us. Come, write your story among the pines.</p>"
         }
     ],
     "attributes-fixed": [
