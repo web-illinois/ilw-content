@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Content Component</title>
+<link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
+<link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-global/3/ilw-global.css">
+<script type="module" src="/src/ilw-content.js"></script>
+<link rel="stylesheet" href="/src/ilw-content.css">
+
+<style>
+  html {
+    background: #eee;
+    --ilw-new-window--display: none;
+  }
+</style>
+
+<script>
+  let componentName = 'ilw-content';
+  document.addEventListener("DOMContentLoaded", function(event) {
+    const params = new URLSearchParams(window.location.search);
+    document.querySelectorAll(componentName).forEach(component => {
+      for (const key of params.keys()) {
+        component.setAttribute(key, params.get(key));
+      }
+    });
+  });
+</script>
+
+<body style="margin: 0 auto; padding: 0; max-width: 1200px;">
+    <ilw-content>
+      <h1>Didn't melt fairer keepsakes since Fellowship elsewhere.</h1>
+      <p>Woodlands payment Osgiliath tightening. Barad-dur follow belly comforts tender tough bell? Many that live deserve death. Some that die deserve life. Outwitted teatime grasp defeated before stones reflection corset seen animals Saruman's call?</p>
+      <h2>Tad survive ensnare joy <a href="https://www.google.com" target="_blank">mistake courtesy Bagshot</a> Row.</h2>
+      <p><a href="https://www.google.com" target="_blank">Ligulas step drops both?</a> You shall not pass! Tender respectable success Valar impressive unfriendly bloom scraped? Branch hey-diddle-diddle pony trouble'll sleeping during jump Narsil.</p>
+      <h3>North valor overflowing sort Iáve mister kingly money?</h3>
+      <p><a href="https://www.google.com">Curse you and all the halflings!</a> Deserted anytime Lake-town burned caves balls. Smoked lthilien forbids Thrain?</p>
+    </ilw-content>
+</body>

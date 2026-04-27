@@ -6,8 +6,8 @@
     "element-name": "ilw-content",
     "description": "The Content component with the lede mode enabled",
     "purpose": "Style a summary or opening paragraph.",
-    "toolkit-version": "1.2",
-    "production-version": "1.2",
+    "toolkit-version": "1.3",
+    "production-version": "1.3",
     "development-version": "latest"
 
 }

@@ -10,11 +10,16 @@ ilw-content {
   font: 400 1.125rem/1.667rem var(--il-font-sans);
 }
 
-ilw-content p, ilw-content caption, ilw-content blockquote, ilw-content dd, ilw-content dt {
+ilw-content p, ilw-content blockquote, ilw-content dd, ilw-content dt {
     display: block;
     margin-top: 1.2rem;
     margin-bottom: 0;
   }
+
+ilw-content caption {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
 
 ilw-content td, ilw-content th {
   font: 400 1.125rem/1.667rem var(--il-font-sans);
@@ -51,6 +56,25 @@ ilw-content a:focus {
   background-color: var(--ilw-color--focus--background);
   color: var(--ilw-color--focus--text);
   outline-color: var(--ilw-color--focus--outline);
+}
+
+ilw-content a[target="_blank"]::after {
+  display: var(--ilw-new-window--display, inline-block);
+  content: var(--ilw-new-window--content, "");
+  mask-image: var(--ilw-new-window--mask-image, url(https://cdn.brand.illinois.edu/icons/solid/blue/link.svg));
+  margin-left:  var(--ilw-new-window--margin-left, 0);
+  position: relative;
+  width: var(--ilw-new-window--width, 1em);
+  height: var(--ilw-new-window--height, 1em);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: var(--ilw-new-window--background-color, currentColor);
 }
 
 ilw-content h1, ilw-content h2, ilw-content h3, 
