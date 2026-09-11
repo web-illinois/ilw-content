@@ -1,12 +1,31 @@
 {
-    "title": "Content - Introduction",
-    "tag": "ilw-content-introduction",
-    "github": "https://github.com/web-illinois/ilw-content/",
-    "type": "web component",
-    "element-name": "ilw-content",
-    "description": "The Content component with the introduction mode enabled",
-    "purpose": "Introduce your content with stylized text.",
-    "toolkit-version": "1.3",
-    "production-version": "1.3",
-    "development-version": "latest"
+  "title": "Content - Introduction",
+  "id": "ilw-content-introduction",
+  "type": "Web Component",
+  "repository-name": "ilw-content",
+  "description": "Create a prominent introductory section with larger, stylized text that helps readers understand the page's main message at a glance.",
+  "purpose": "Introduce your content with stylized text.",
+  "customtemplates": [],
+  "versions": [
+    {
+      "name": "1.0",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.1",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.2",
+      "notes": "",
+      "template": "1.0"
+    },
+    {
+      "name": "1.3",
+      "notes": "",
+      "template": "1.3"
+    }
+  ]
 }
